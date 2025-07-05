@@ -133,6 +133,35 @@
           "allows": ["https://wallet.meteorwallet.app"]
         }
       }
+    },
+    {
+      "id": "intear-wallet",
+      "name": "Intear Wallet",
+      "icon": "https://wallet.intear.tech/favicon.svg",
+      "description": "A fast and secure wallet for everyday interactions with dapps",
+      "website": "https://intea.rs/",
+      "version": "1.0.0",
+      "executor": "https://wallet.intear.tech/near-selector.js",
+      "type": "sandbox",
+      "features": {
+        "signMessage": true,
+        "signTransaction": false,
+        "signAndSendTransaction": true,
+        "signAndSendTransactions": true,
+        "signInWithoutAddKey": true,
+        "verifyOwner": false,
+        "testnet": true
+      },
+      "platform": {
+        "web": "https://wallet.intear.tech"
+      },
+      "permissions": {
+        "storage": true,
+        "location": true,
+        "open": {
+          "allows": ["https://wallet.intear.tech", "https://logout-bridge-service.intear.tech"]
+        }
+      }
     }
   ]
 }
